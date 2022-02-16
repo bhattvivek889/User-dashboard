@@ -1,0 +1,219 @@
+/* App */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* sidebar */
+.sidebar{
+    background-color: gray;
+    width: 30%;
+    flex: 25%;
+    margin-top: 30px;
+    border-radius: 10px;
+    list-style-type: none;
+    height: 400px;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.sidebar li{
+    cursor:pointer;
+    margin-bottom: 50px;
+    margin-left:0px;
+    font-size: 25px;
+    padding-left: 0px;
+}
+.sidebar a{
+    margin-left: 10px;
+}
+.sidebar li:hover{
+    background-color: white;
+}
+
+/* home */
+.home{
+    flex: 75%;
+}
+.home2{
+    margin-left:50px;
+    flex-wrap: wrap;
+}
+.home3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 10px 20px black;
+}
+.home4{
+    flex: 1;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.heading{
+    margin-top:-15px;
+}
+.lists{
+    display: flex;
+    margin-right:100px;
+}
+.list{
+    flex: 25%;
+    margin: 0px 15px;
+    border: 1px solid black;
+    box-shadow: 5px 10px 20px black;
+    padding: 30px;
+    border-radius: 8px;
+}
+.myimg{
+    flex: 1;
+    width: 350px;
+    height: 300px;
+    margin: 50px;
+}
+
+/* Profile */
+.profile-sec1{
+    flex: 75%;
+}
+.profile-sec2{
+    margin-left: 50px;
+}
+.btn{
+    cursor: pointer;
+}
+.profile-name{
+    font-size: 50px;
+    margin: 0px 30px;
+    margin-bottom: 20px;
+}
+.profile-city{
+    font-size: 20px;
+    margin: 0px 45px;
+}
+.profile-email{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 175px;
+    padding-top:20px;
+}
+.profile-tel{
+    font-size:15px;
+    display: inline-block;
+    margin-right: 175px;
+}
+.profile-github{
+    font-size:15px;
+    display: inline-block;
+    margin-right: 175px;
+}
+.profile-linkedin{
+    font-size:15px;
+    display: inline-block;
+}
+.experience{
+    font-size:20px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.available{
+    font-size:20px;
+    margin-left: 30px;    
+    display: inline-block;
+}
+.pro-p{
+    display: inline-block;
+    margin-left: 10px;
+}
+.profile-experience{
+    display: inline-block;
+    width: 300px;
+    font-weight: bold;
+}
+.profile-available{
+    display: inline-block;
+    width: 300px;
+    font-weight: bold;
+}
+
+/* Edit */
+.edit-sec1{
+    flex: 75%;
+}
+.edit-sec2{
+    margin-left: 250px;
+}
+input{
+    display: inline-block;
+    width: 150px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+input:placeholder-shown{
+    opacity: 0.6;
+}
+h3{
+    display: inline-block;
+    width: 200px;
+}
+.btn1{
+    margin-left: 175px;
+    cursor: pointer;
+}
+@media(max-width:1000px){
+    .mainhead{
+        text-align: center;
+    }
+    .sidebar{
+        margin:50px 140px;
+    }
+    .home{
+        flex: 100%;
+    }
+    .home,.home2,.home3{
+        margin-left: 0px;
+    }
+    .myimg{
+        display: block;
+        margin:50px;
+        margin-right: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .home4{
+        margin: 0px;
+    }
+    .home3{
+        margin-right: 2px;
+    }
+}
+@media(max-width:600px){
+    .lists{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .list{
+        flex:1;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:748px){
+    .home{
+        text-align: center;
+    }
+    .myimg{
+        padding: 0px 100px;
+        flex: 100%;
+    }
+    .home4 h3{
+        text-align: center;
+    }
+    .home4{
+        flex: 100%;
+        text-align: left;
+    }
+}
